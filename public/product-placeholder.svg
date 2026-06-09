@@ -1,0 +1,36 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="92" y1="83" x2="708" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE8E1"/>
+      <stop offset="0.52" stop-color="#FFFDFB"/>
+      <stop offset="1" stop-color="#F7EADF"/>
+    </linearGradient>
+    <linearGradient id="body" x1="258" y1="192" x2="544" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8E2D7"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="800" height="800" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="28"/>
+      <feGaussianBlur stdDeviation="30"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.52 0 0 0 0 0.36 0 0 0 0 0.29 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" rx="160" fill="url(#bg)"/>
+  <circle cx="182" cy="164" r="102" fill="#FFFFFF" fill-opacity="0.5"/>
+  <circle cx="640" cy="168" r="122" fill="#FFF4EF" fill-opacity="0.88"/>
+  <circle cx="602" cy="612" r="128" fill="#F4DCCF" fill-opacity="0.55"/>
+  <g filter="url(#shadow)">
+    <rect x="234" y="176" width="332" height="492" rx="72" fill="url(#body)"/>
+    <rect x="292" y="124" width="216" height="96" rx="48" fill="#1F1A17"/>
+    <rect x="309" y="256" width="182" height="16" rx="8" fill="#E0C9BE"/>
+    <rect x="309" y="292" width="148" height="16" rx="8" fill="#E0C9BE"/>
+    <rect x="309" y="328" width="168" height="16" rx="8" fill="#E0C9BE"/>
+    <rect x="309" y="472" width="152" height="60" rx="30" fill="#F3D8CF"/>
+    <rect x="309" y="556" width="196" height="16" rx="8" fill="#ECD4CA"/>
+  </g>
+  <path d="M403 150C419 150 432 163 432 179V216H374V179C374 163 387 150 403 150Z" fill="#F1C7B8"/>
+</svg>
