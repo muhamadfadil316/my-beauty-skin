@@ -92,7 +92,7 @@ export function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c6b6]">Ilustrasi kebutuhan produk</p>
                 <h2 className="font-display text-3xl leading-tight text-[#221816] sm:text-4xl">Pilihan yang terasa tenang dan selaras.</h2>
                 <p className="text-sm leading-7 text-[#6f5b54]">
-                  Tampilan dibuat lebih minimal agar fokus tetap pada produk dan kebutuhan pengguna.
+                    Tampilan dibuat lebih minimal.
                 </p>
               </div>
 
