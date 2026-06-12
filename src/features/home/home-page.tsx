@@ -89,8 +89,8 @@ export function HomePage() {
               <div className="absolute -bottom-14 right-2 h-44 w-44 rounded-full bg-[#e8cfc2]/45 blur-3xl" />
 
               <div className="relative max-w-sm space-y-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c6b6]">Ilustrasi kebutuhan produk</p>
-                <h2 className="font-display text-3xl leading-tight text-[#221816] sm:text-4xl">Pilihan yang terasa tenang dan selaras.</h2>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c6b6]">Kebutuhan produk</p>
+                <h2 className="font-display text-3xl leading-tight text-[#221816] sm:text-4xl">Pilihan tepat, kulit nyaman.</h2>
                 
               </div>
 
