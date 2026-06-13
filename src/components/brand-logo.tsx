@@ -26,7 +26,7 @@ export function BrandLogo({ className, showTagline = true, size = "md" }: BrandL
         <p className={cn("font-display font-semibold text-[#221816]", titleSize)}>MyBeautySkin</p>
         {showTagline ? (
           <p className={cn("hidden uppercase tracking-[0.24em] text-[#b88a7b] sm:block", taglineSize)}>
-            MBS beauty essentials
+            beauty essentials
           </p>
         ) : null}
       </div>
