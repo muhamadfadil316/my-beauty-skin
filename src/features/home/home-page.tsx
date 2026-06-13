@@ -181,7 +181,7 @@ export function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f3cfc0]">Info produk</p>
               <h2 className="font-display text-4xl">Dapatkan inspirasi produk dan tips perawatan terbaru.</h2>
               <p className="max-w-2xl text-sm leading-7 text-white/75">
-                Masukkan email Anda untuk menerima rekomendasi produk, tips perawatan, dan kabar terbaru dari MyBeautySkin.
+                Masukkan email Anda untuk menerima rekomendasi produk, dan tips perawatan dari MyBeautySkin.
               </p>
             </div>
             <div className="min-w-0 rounded-[28px] bg-white/10 p-4 backdrop-blur-sm sm:min-w-105">
