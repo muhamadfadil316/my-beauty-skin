@@ -39,7 +39,7 @@ app/ (routes, metadata, server)  →  features/ (page-level UI + state)  →  co
 `product-listing-page.tsx` calls `filterProducts(mockProducts, …)` directly instead of going through `product.service.ts`. New product-data reads should prefer the service layer to keep the swap-to-backend boundary intact.
 
 ### Recommendation engine
-`recommendation.service.ts` is keyword-based: `recommendationRules` maps Indonesian/English keywords (e.g. "jerawat", "acne") to `concern` tags, matches the user query, filters products by concern, then ranks by rating. Extend by adding rules to that array.
+`recommendation.service.ts` is keyword-based: `recommendationRules` maps Indonesian/English keywords (e.g. "jerawat", "acne") to `concern` tags. It matches the query against the first rule whose keywords appear, then surfaces products whose `concern` overlaps — but it always appends the full catalog as a deduped fallback and ranks everything by rating, so results are never empty and capped at 6. An empty or unmatched query falls back to the first rule (`acne`). Extend by adding rules to that array.
 
 ## Conventions
 
