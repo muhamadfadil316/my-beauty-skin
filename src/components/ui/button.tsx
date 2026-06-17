@@ -10,10 +10,10 @@ const base =
 
 const variantMap: Record<Variant, string> = {
   primary:
-    "bg-[#1f1a17] text-white shadow-[0_12px_30px_rgba(31,26,23,0.16)] hover:-translate-y-0.5 hover:bg-[#3a2f2a]",
+    "bg-[#9d6f78] text-white shadow-[0_12px_30px_rgba(157,111,120,0.16)] hover:-translate-y-0.5 hover:bg-[#b9858d]",
   secondary:
-    "bg-white text-[#1f1a17] border border-[#eadfd9] shadow-sm hover:-translate-y-0.5 hover:border-[#d9c8bf]",
-  ghost: "bg-transparent text-[#1f1a17] hover:bg-[#f9f2ef]",
+    "bg-white text-[#9d6f78] border border-[#eadfd9] shadow-sm hover:-translate-y-0.5 hover:border-[#d9c8bf]",
+  ghost: "bg-transparent text-[#9d6f78] hover:bg-[#f9f2ef]",
 };
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

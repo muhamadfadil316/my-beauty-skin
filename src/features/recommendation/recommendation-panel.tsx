@@ -29,7 +29,7 @@ export function RecommendationPanel() {
               <WandSparkles className="h-4 w-4" />
               Pencarian Rekomendasi
             </div>
-            <h1 className="font-display text-4xl text-[#221816] md:text-5xl">Temukan produk berdasarkan kebutuhan Anda</h1>
+            <h1 className="font-display text-4xl text-[#8b5a62] md:text-5xl">Temukan produk berdasarkan kebutuhan Anda</h1>
             <p className="max-w-xl text-sm leading-7 text-[#6f5b54]">
               Masukkan kondisi atau kebutuhan yang ingin Anda prioritaskan, lalu lihat produk yang paling relevan untuk rutinitas harian.
             </p>
@@ -53,7 +53,7 @@ export function RecommendationPanel() {
                   key={example}
                   type="button"
                   onClick={() => setQuery(example)}
-                  className="rounded-full border border-[#eadfd9] bg-white px-4 py-2 text-sm text-[#6f5b54] transition hover:border-[#d6b7ab] hover:text-[#221816]"
+                  className="rounded-full border border-[#eadfd9] bg-white px-4 py-2 text-sm text-[#6f5b54] transition hover:border-[#d6b7ab] hover:text-[#8b5a62]"
                 >
                   {example}
                 </button>
@@ -73,7 +73,7 @@ export function RecommendationPanel() {
                 <Sparkles className="h-4 w-4" />
                 Result
               </div>
-              <h2 className="mt-3 font-display text-3xl text-[#221816]">{result.label}</h2>
+              <h2 className="mt-3 font-display text-3xl text-[#8b5a62]">{result.label}</h2>
               <p className="mt-3 text-sm leading-7 text-[#6f5b54]">{result.reason}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {result.keywords.map((keyword) => (

@@ -39,7 +39,7 @@ export function HomePage() {
           </div>
 
           <div className="space-y-5">
-            <h1 className="max-w-3xl font-display text-4xl leading-[1.08] text-[#221816] sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl font-display text-4xl leading-[1.08] text-[#8b5a62] sm:text-5xl lg:text-6xl">
               Temukan produk yang cocok untuk kulit dan rambut Anda.
             </h1>
             <p className="max-w-2xl text-sm leading-7 text-[#6f5b54] sm:text-base md:text-lg">
@@ -60,7 +60,7 @@ export function HomePage() {
           <div className="grid gap-4 sm:grid-cols-3">
             {heroStats.map((stat) => (
               <div key={stat.label} className="rounded-[26px] border border-[#efe4de] bg-white p-5 shadow-[0_14px_30px_rgba(122,86,69,0.08)]">
-                <p className="font-display text-2xl text-[#221816] sm:text-3xl">{stat.value}</p>
+                <p className="font-display text-2xl text-[#8b5a62] sm:text-3xl">{stat.value}</p>
                 <p className="mt-1 text-sm text-[#6f5b54]">{stat.label}</p>
               </div>
             ))}
@@ -165,7 +165,7 @@ export function HomePage() {
         <div className="grid gap-4 md:grid-cols-3">
           {mockFaqs.map((faq) => (
             <details key={faq.question} className="group rounded-[28px] border border-[#efe4de] bg-white p-6 shadow-[0_18px_40px_rgba(122,86,69,0.08)]">
-              <summary className="cursor-pointer list-none font-semibold text-[#221816]">
+              <summary className="cursor-pointer list-none font-semibold text-[#8b5a62]">
                 {faq.question}
               </summary>
               <p className="mt-4 text-sm leading-7 text-[#6f5b54]">{faq.answer}</p>
@@ -175,7 +175,7 @@ export function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl">
-        <div className="overflow-hidden rounded-[36px] border border-[#efe4de] bg-linear-to-br from-[#1f1a17] via-[#2a221f] to-[#3a2f2a] px-6 py-10 text-white shadow-[0_28px_70px_rgba(31,26,23,0.18)] sm:px-10">
+        <div className="overflow-hidden rounded-[36px] border border-[#efe4de] bg-linear-to-br from-[#9d6f78] via-[#aa7a82] to-[#b9858d] px-6 py-10 text-white shadow-[0_28px_70px_rgba(157,111,120,0.18)] sm:px-10">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div className="space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f3cfc0]">Info produk</p>
@@ -187,7 +187,7 @@ export function HomePage() {
             <div className="min-w-0 rounded-[28px] bg-white/10 p-4 backdrop-blur-sm sm:min-w-105">
               <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
                 <input className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/55 outline-none" placeholder="Alamat email" />
-                <Button type="button" className="bg-[#fff6f1] text-[#221816] hover:bg-white">Gabung</Button>
+                <Button type="button" className="bg-[#fff6f1] text-[#8b5a62] hover:bg-white">Gabung</Button>
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
             </div>
           </div>
           {product.bestSeller ? (
-            <span className="absolute left-4 top-4 rounded-full bg-[#1f1a17] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+            <span className="absolute left-4 top-4 rounded-full bg-[#9d6f78] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
               Bestseller
             </span>
           ) : null}
@@ -44,7 +44,7 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
             </p>
             <div className="flex items-start justify-between gap-3">
               <div>
-                <h3 className={`font-display text-xl text-[#221816] ${compact ? "line-clamp-1" : ""}`}>
+                <h3 className={`font-display text-xl text-[#8b5a62] ${compact ? "line-clamp-1" : ""}`}>
                   {product.name}
                 </h3>
                 <p className="text-sm text-[#7b6962]">{product.brand}</p>
@@ -59,7 +59,7 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
           <p className="line-clamp-3 text-sm leading-7 text-[#6f5b54]">{product.description}</p>
 
           <div className="mt-auto flex items-center justify-between border-t border-[#f3e7e1] pt-4">
-            <span className="text-lg font-semibold text-[#221816]">
+            <span className="text-lg font-semibold text-[#8b5a62]">
               {formatPrice(product.price)}
             </span>
             <span className="rounded-full bg-[#faf4f1] px-3 py-1 text-xs font-medium text-[#8a7169] transition group-hover:bg-[#f5e7e1]">

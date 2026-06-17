@@ -35,8 +35,8 @@ export function SiteHeader() {
                 href={item.href}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                   active
-                    ? "bg-[#1f1a17] text-white"
-                    : "text-[#6f5b54] hover:bg-[#f8f1ed] hover:text-[#221816]"
+                    ? "bg-[#9d6f78] text-white"
+                    : "text-[#6f5b54] hover:bg-[#f8f1ed] hover:text-[#8b5a62]"
                 }`}
               >
                 {item.label}
@@ -48,7 +48,7 @@ export function SiteHeader() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/recommendation"
-            className="flex items-center gap-2 rounded-full border border-[#efe4de] bg-white px-4 py-2 text-sm font-semibold text-[#221816] shadow-[0_10px_24px_rgba(122,86,69,0.08)] transition hover:-translate-y-0.5 hover:border-[#d8c4bb]"
+            className="flex items-center gap-2 rounded-full border border-[#efe4de] bg-white px-4 py-2 text-sm font-semibold text-[#8b5a62] shadow-[0_10px_24px_rgba(122,86,69,0.08)] transition hover:-translate-y-0.5 hover:border-[#d8c4bb]"
           >
             <Search className="h-4 w-4" />
             Cari
@@ -58,7 +58,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setIsOpen((value) => !value)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#efe4de] bg-white text-[#221816] shadow-sm lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#efe4de] bg-white text-[#8b5a62] shadow-sm lg:hidden"
           aria-label="Toggle navigation"
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -76,7 +76,7 @@ export function SiteHeader() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={`rounded-2xl px-4 py-3 text-sm font-medium ${
-                  active ? "bg-[#1f1a17] text-white" : "text-[#6f5b54] hover:bg-[#f8f1ed]"
+                  active ? "bg-[#9d6f78] text-white" : "text-[#6f5b54] hover:bg-[#f8f1ed]"
                 }`}
               >
                 {item.label}

@@ -18,7 +18,7 @@ interface ProductFiltersProps {
 }
 
 const selectClassName =
-  "w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm text-[#221816] shadow-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]";
+  "w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm text-[#8b5a62] shadow-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]";
 
 export function ProductFiltersPanel({
   query,
@@ -98,7 +98,7 @@ export function ProductFiltersPanel({
           {skinType ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Kulit: {skinType}</span> : null}
           {concern ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Kebutuhan: {concern}</span> : null}
         </div>
-        <button type="button" onClick={onReset} className="font-semibold text-[#8d5d52] transition hover:text-[#221816]">
+        <button type="button" onClick={onReset} className="font-semibold text-[#8d5d52] transition hover:text-[#8b5a62]">
           Atur ulang
         </button>
       </div>

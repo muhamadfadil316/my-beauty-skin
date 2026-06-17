@@ -12,7 +12,7 @@ export function TestimonialCard({ name, role, message }: TestimonialCardProps) {
       </div>
       <p className="text-sm leading-7 text-[#6f5b54]">“{message}”</p>
       <div className="mt-5">
-        <p className="font-semibold text-[#221816]">{name}</p>
+        <p className="font-semibold text-[#8b5a62]">{name}</p>
         <p className="text-xs uppercase tracking-[0.2em] text-[#b88a7b]">{role}</p>
       </div>
     </article>

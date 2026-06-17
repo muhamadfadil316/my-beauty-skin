@@ -52,7 +52,7 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
               <Sparkles className="h-4 w-4" />
               {product.category}
             </div>
-            <h1 className="font-display text-4xl text-[#221816] md:text-5xl">{product.name}</h1>
+            <h1 className="font-display text-4xl text-[#8b5a62] md:text-5xl">{product.name}</h1>
             <p className="text-sm uppercase tracking-[0.24em] text-[#8e766d]">{product.brand}</p>
           </div>
 
@@ -126,7 +126,7 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">Related Products</p>
-            <h2 className="font-display text-3xl text-[#221816]">Products with similar concern</h2>
+            <h2 className="font-display text-3xl text-[#8b5a62]">Products with similar concern</h2>
           </div>
         </div>
         <ProductGrid products={relatedProducts} compact />

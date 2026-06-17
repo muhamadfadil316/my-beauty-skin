@@ -35,7 +35,7 @@ export function SiteFooter() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#b88a7b]">Quick Links</p>
           <div className="flex flex-col gap-3">
             {footerLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm text-[#6f5b54] transition hover:text-[#221816]">
+              <Link key={link.href} href={link.href} className="text-sm text-[#6f5b54] transition hover:text-[#8b5a62]">
                 {link.label}
               </Link>
             ))}

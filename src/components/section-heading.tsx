@@ -14,7 +14,7 @@ export function SectionHeading({ eyebrow, title, description, action }: SectionH
         {eyebrow ? (
           <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[#b57f73]">{eyebrow}</p>
         ) : null}
-        <h2 className="font-display text-3xl leading-tight text-[#221816] md:text-4xl">{title}</h2>
+        <h2 className="font-display text-3xl leading-tight text-[#8b5a62] md:text-4xl">{title}</h2>
         {description ? <p className="text-sm leading-7 text-[#6d5b55] md:text-base">{description}</p> : null}
       </div>
       {action ? <div>{action}</div> : null}
