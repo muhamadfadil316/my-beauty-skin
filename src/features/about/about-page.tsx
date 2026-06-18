@@ -37,7 +37,7 @@ export function AboutPage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="rounded-[34px] bg-[#1f1a17] p-8 text-white shadow-[0_24px_70px_rgba(31,26,23,0.14)]">
+        <div className="rounded-[34px] bg-[#9d6f78] p-8 text-white shadow-[0_24px_70px_rgba(31,26,23,0.14)]">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c6b6]">Kenapa terasa nyaman</p>
           <h2 className="mt-4 font-display text-4xl">Pencarian produk yang cepat dan tidak membingungkan.</h2>
           <p className="mt-4 text-sm leading-7 text-white/75">
