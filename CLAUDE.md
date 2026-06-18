@@ -44,7 +44,7 @@ app/ (routes, metadata, server)  →  features/ (page-level UI + state)  →  co
 ## Conventions
 
 - **Path alias**: import from `@/*` (maps to `src/*`).
-- **Styling**: Tailwind CSS v4 (via `@tailwindcss/postcss`, no `tailwind.config`). Colors are hardcoded hex values in className strings (warm beige/brown palette, e.g. `#fffaf8`, `#221816`, `#b37e6e`) rather than theme tokens. Fonts: Inter (`--font-body`) and Merriweather (`--font-display-font`) loaded in `layout.tsx`.
+- **Styling**: Tailwind CSS v4 (via `@tailwindcss/postcss`, no `tailwind.config`). Colors are hardcoded hex values in className strings (warm beige/brown palette, e.g. `#fffaf8`, `#221816`, `#b37e6e`) rather than theme tokens. Fonts: Plus Jakarta Sans (`--font-body`) and Fraunces (`--font-display-font`) loaded in `layout.tsx`.
 - **Class merging**: use `cn()` from `@/lib/cn` (simple filter+join, not `clsx`/`tailwind-merge`).
 - **Animation**: Framer Motion; `PageShell` wraps every route with an `AnimatePresence` page transition keyed on pathname.
 - **Icons**: `lucide-react`.

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Merriweather, Inter } from "next/font/google";
+import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import { PageShell } from "@/components/page-shell";
 import "./globals.css";
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
-const merriweather = Merriweather({
+const fraunces = Fraunces({
   variable: "--font-display-font",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${merriweather.variable} h-full antialiased`}>
+    <html lang="id" className={`${plusJakartaSans.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <PageShell>{children}</PageShell>
       </body>
