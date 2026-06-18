@@ -6,13 +6,13 @@ import Link from "next/link";
 type Variant = "primary" | "secondary" | "ghost";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white";
+  "group/btn inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300 ease-out active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d6a8a0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#fffaf8]";
 
 const variantMap: Record<Variant, string> = {
   primary:
-    "bg-[#9d6f78] text-white shadow-[0_12px_30px_rgba(157,111,120,0.16)] hover:-translate-y-0.5 hover:bg-[#b9858d]",
+    "shine bg-linear-to-br from-[#9d6f78] via-[#a8757d] to-[#bb868e] text-white shadow-[0_14px_34px_rgba(157,111,120,0.28)] hover:-translate-y-0.5 hover:shadow-[0_20px_44px_rgba(157,111,120,0.38)]",
   secondary:
-    "bg-white text-[#9d6f78] border border-[#eadfd9] shadow-sm hover:-translate-y-0.5 hover:border-[#d9c8bf]",
+    "bg-white/85 text-[#9d6f78] border border-[#eadfd9] shadow-[0_8px_22px_rgba(122,86,69,0.08)] backdrop-blur-sm hover:-translate-y-0.5 hover:border-[#d9c8bf] hover:bg-white",
   ghost: "bg-transparent text-[#9d6f78] hover:bg-[#f9f2ef]",
 };
 

@@ -24,8 +24,10 @@ export function AboutPage() {
           {values.map((value) => {
             const Icon = value.icon;
             return (
-              <motion.article key={value.title} whileHover={{ y: -6 }} className="rounded-[28px] border border-[#efe4de] bg-[#fffaf8] p-6">
-                <Icon className="h-6 w-6 text-[#b37e6e]" />
+              <motion.article key={value.title} whileHover={{ y: -8 }} className="group rounded-[28px] border border-[#efe4de] bg-[#fffaf8] p-6 transition-shadow duration-300 hover:border-[#e4cfc6] hover:shadow-[0_24px_54px_rgba(122,86,69,0.14)]">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-[#9d6f78] to-[#c79b86] text-white shadow-[0_10px_24px_rgba(157,111,120,0.28)] transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-6">
+                  <Icon className="h-6 w-6" />
+                </span>
                 <h3 className="mt-4 font-display text-2xl text-[#221816]">{value.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-[#6f5b54]">{value.description}</p>
               </motion.article>

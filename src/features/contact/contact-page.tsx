@@ -18,11 +18,11 @@ export function   ContactPage() {
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <motion.form whileHover={{ y: -2 }} className="space-y-4 rounded-[30px] bg-[#fffaf8] p-6">
             <div className="grid gap-4 sm:grid-cols-2">
-              <input className="rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none" placeholder="Nama Anda" />
-              <input className="rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none" placeholder="Alamat email" />
+              <input className="rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]" placeholder="Nama Anda" />
+              <input className="rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]" placeholder="Alamat email" />
             </div>
-            <input className="w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none" placeholder="Topik pesan" />
-            <textarea rows={6} className="w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none" placeholder="Tulis pesan Anda" />
+            <input className="w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]" placeholder="Topik pesan" />
+            <textarea rows={6} className="w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]" placeholder="Tulis pesan Anda" />
             <Button type="button" className="w-full sm:w-auto">
               <Send className="h-4 w-4" />
               Kirim Pesan
@@ -40,13 +40,13 @@ export function   ContactPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[30px] border border-[#efe4de] bg-white p-6">
-                <Mail className="h-6 w-6 text-[#b37e6e]" />
+              <div className="group rounded-[30px] border border-[#efe4de] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#e4cfc6] hover:shadow-[0_20px_44px_rgba(122,86,69,0.12)]">
+                <Mail className="h-6 w-6 text-[#b37e6e] transition-transform duration-300 group-hover:scale-110" />
                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">Email</p>
                 <p className="mt-2 text-sm text-[#6f5b54]">mybeautyskin@gmail.com</p>
               </div>
-              <div className="rounded-[30px] border border-[#efe4de] bg-white p-6">
-                <Phone className="h-6 w-6 text-[#b37e6e]" />
+              <div className="group rounded-[30px] border border-[#efe4de] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#e4cfc6] hover:shadow-[0_20px_44px_rgba(122,86,69,0.12)]">
+                <Phone className="h-6 w-6 text-[#b37e6e] transition-transform duration-300 group-hover:scale-110" />
                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">Telepon</p>
                 <p className="mt-2 text-sm text-[#6f5b54]">+62 000 0000 000</p>
               </div>

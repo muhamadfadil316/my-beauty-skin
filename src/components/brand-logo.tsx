@@ -12,10 +12,10 @@ export function BrandLogo({ className, showTagline = true, size = "md" }: BrandL
   const taglineSize = size === "sm" ? "text-[10px]" : "text-[11px]";
 
   return (
-    <div className={cn("flex items-center gap-3", className)}>
+    <div className={cn("group flex items-center gap-3", className)}>
       <div
         className={cn(
-          "flex items-center justify-center rounded-2xl bg-[#1f1a17] text-white shadow-[0_14px_30px_rgba(120,84,67,0.18)]",
+          "shine relative flex items-center justify-center rounded-2xl bg-linear-to-br from-[#9d6f78] via-[#a8757d] to-[#c79b86] text-white shadow-[0_14px_30px_rgba(157,111,120,0.32)] ring-1 ring-white/40 transition-transform duration-300 group-hover:-translate-y-0.5",
           markSize,
         )}
       >

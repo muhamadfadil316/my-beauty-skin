@@ -11,7 +11,8 @@ const footerLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-[#efe4de] bg-white/80">
+    <footer className="relative border-t border-[#efe4de] bg-white/70 backdrop-blur-sm">
+      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#d6b7ab] to-transparent" />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
         <div className="space-y-5">
           <BrandLogo size="sm" />
@@ -19,13 +20,13 @@ export function SiteFooter() {
             Tempat menjelajah produk kecantikan untuk kulit, rambut, dan rutinitas harian dengan tampilan yang rapi dan mudah digunakan.
           </p>
           <div className="flex items-center gap-3 text-[#7a5e56]">
-            <a aria-label="Instagram" href="#" className="rounded-full border border-[#efe4de] p-3 transition hover:border-[#d8c4bb] hover:bg-[#fdf7f4]">
+            <a aria-label="Instagram" href="#" className="rounded-full border border-[#efe4de] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-linear-to-br hover:from-[#9d6f78] hover:to-[#bb868e] hover:text-white hover:shadow-[0_10px_24px_rgba(157,111,120,0.32)]">
               <Instagram className="h-4 w-4" />
             </a>
-            <a aria-label="Facebook" href="#" className="rounded-full border border-[#efe4de] p-3 transition hover:border-[#d8c4bb] hover:bg-[#fdf7f4]">
+            <a aria-label="Facebook" href="#" className="rounded-full border border-[#efe4de] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-linear-to-br hover:from-[#9d6f78] hover:to-[#bb868e] hover:text-white hover:shadow-[0_10px_24px_rgba(157,111,120,0.32)]">
               <Facebook className="h-4 w-4" />
             </a>
-            <a aria-label="Youtube" href="#" className="rounded-full border border-[#efe4de] p-3 transition hover:border-[#d8c4bb] hover:bg-[#fdf7f4]">
+            <a aria-label="Youtube" href="#" className="rounded-full border border-[#efe4de] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-linear-to-br hover:from-[#9d6f78] hover:to-[#bb868e] hover:text-white hover:shadow-[0_10px_24px_rgba(157,111,120,0.32)]">
               <Youtube className="h-4 w-4" />
             </a>
           </div>

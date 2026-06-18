@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Plus, Sparkles } from "lucide-react";
 import { LinkButton, Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/section-heading";
 import { mockCategories, mockFaqs, mockProducts, mockTestimonials } from "@/data/mock-products";
@@ -33,14 +33,20 @@ export function HomePage() {
           transition={{ duration: 0.45 }}
           className="space-y-8"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#eadfd9] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e] shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#eadfd9] bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e] shadow-sm backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#d6a8a0] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#9d6f78]" />
+            </span>
             <Sparkles className="h-4 w-4" />
             Temukan produk yang pas
           </div>
 
           <div className="space-y-5">
-            <h1 className="max-w-3xl font-display text-4xl leading-[1.08] text-[#8b5a62] sm:text-5xl lg:text-6xl">
-              Temukan produk yang cocok untuk kulit dan rambut Anda.
+            <h1 className="max-w-3xl font-display text-4xl leading-[1.08] sm:text-5xl lg:text-6xl">
+              <span className="text-[#8b5a62]">Temukan produk yang cocok untuk </span>
+              <span className="text-gradient">kulit dan rambut</span>
+              <span className="text-[#8b5a62]"> Anda.</span>
             </h1>
             <p className="max-w-2xl text-sm leading-7 text-[#6f5b54] sm:text-base md:text-lg">
               MyBeautySkin membantu Anda memilih produk berdasarkan kebutuhan dan rutinitas harian.
@@ -59,8 +65,8 @@ export function HomePage() {
 
           <div className="grid gap-4 sm:grid-cols-3">
             {heroStats.map((stat) => (
-              <div key={stat.label} className="rounded-[26px] border border-[#efe4de] bg-white p-5 shadow-[0_14px_30px_rgba(122,86,69,0.08)]">
-                <p className="font-display text-2xl text-[#8b5a62] sm:text-3xl">{stat.value}</p>
+              <div key={stat.label} className="rounded-[26px] border border-[#efe4de] bg-white/85 p-5 shadow-[0_14px_30px_rgba(122,86,69,0.08)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#e4cfc6] hover:shadow-[0_22px_46px_rgba(122,86,69,0.16)]">
+                <p className="font-display text-2xl text-gradient sm:text-3xl">{stat.value}</p>
                 <p className="mt-1 text-sm text-[#6f5b54]">{stat.label}</p>
               </div>
             ))}
@@ -95,14 +101,14 @@ export function HomePage() {
               </div>
 
               <div className="relative mt-10 flex items-end justify-center gap-4">
-                <div className="h-28 w-24 rounded-[28px] border border-white/80 bg-white/85 shadow-[0_18px_36px_rgba(122,86,69,0.1)]" />
-                <div className="h-40 w-28 rounded-[34px] border border-white/90 bg-white/92 shadow-[0_22px_46px_rgba(122,86,69,0.12)]">
-                  <div className="mx-auto mt-3 h-6 w-16 rounded-full bg-[#1f1a17]" />
+                <div className="animate-float-delayed h-28 w-24 rounded-[28px] border border-white/80 bg-white/85 shadow-[0_18px_36px_rgba(122,86,69,0.1)]" />
+                <div className="animate-float h-40 w-28 rounded-[34px] border border-white/90 bg-white/92 shadow-[0_22px_46px_rgba(122,86,69,0.12)]">
+                  <div className="mx-auto mt-3 h-6 w-16 rounded-full bg-linear-to-r from-[#9d6f78] to-[#bb868e]" />
                   <div className="mx-auto mt-8 h-2 w-12 rounded-full bg-[#e6c9bd]" />
                   <div className="mx-auto mt-2 h-2 w-14 rounded-full bg-[#e6c9bd]" />
                   <div className="mx-auto mt-10 h-6 w-12 rounded-full bg-[#f1ddd3]" />
                 </div>
-                <div className="h-24 w-20 rounded-3xl border border-white/75 bg-white/75 shadow-[0_14px_30px_rgba(122,86,69,0.08)]" />
+                <div className="animate-float-slow h-24 w-20 rounded-3xl border border-white/75 bg-white/75 shadow-[0_14px_30px_rgba(122,86,69,0.08)]" />
               </div>
 
               <div className="relative mt-8 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#8b5d51]">
@@ -164,9 +170,10 @@ export function HomePage() {
         />
         <div className="grid gap-4 md:grid-cols-3">
           {mockFaqs.map((faq) => (
-            <details key={faq.question} className="group rounded-[28px] border border-[#efe4de] bg-white p-6 shadow-[0_18px_40px_rgba(122,86,69,0.08)]">
-              <summary className="cursor-pointer list-none font-semibold text-[#8b5a62]">
+            <details key={faq.question} className="group rounded-[28px] border border-[#efe4de] bg-white p-6 shadow-[0_18px_40px_rgba(122,86,69,0.08)] transition-all duration-300 hover:border-[#e4cfc6] hover:shadow-[0_24px_54px_rgba(122,86,69,0.14)] open:bg-[#fffaf8]">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[#8b5a62]">
                 {faq.question}
+                <Plus className="h-5 w-5 shrink-0 text-[#b37e6e] transition-transform duration-300 group-open:rotate-45" />
               </summary>
               <p className="mt-4 text-sm leading-7 text-[#6f5b54]">{faq.answer}</p>
             </details>
@@ -175,20 +182,27 @@ export function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl">
-        <div className="overflow-hidden rounded-[36px] border border-[#efe4de] bg-linear-to-br from-[#9d6f78] via-[#aa7a82] to-[#b9858d] px-6 py-10 text-white shadow-[0_28px_70px_rgba(157,111,120,0.18)] sm:px-10">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="relative overflow-hidden rounded-[36px] border border-[#efe4de] bg-linear-to-br from-[#9d6f78] via-[#aa7a82] to-[#b9858d] px-6 py-10 text-white shadow-[0_28px_70px_rgba(157,111,120,0.22)] sm:px-10">
+          <div className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-white/15 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 -left-10 h-64 w-64 rounded-full bg-[#f3cfc0]/25 blur-3xl" />
+          <div className="beauty-grid pointer-events-none absolute inset-0 opacity-30" />
+          <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f3cfc0]">Info produk</p>
+              <p className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.3em] text-[#fbe4da] backdrop-blur-sm">
+                <Sparkles className="h-3.5 w-3.5" />
+                Info produk
+              </p>
               <h2 className="font-display text-4xl">Dapatkan inspirasi produk dan tips perawatan terbaru.</h2>
               <p className="max-w-2xl text-sm leading-7 text-white/75">
                 Masukkan email Anda untuk mendapatkan rekomendasi produk, dan tips perawatan dari MyBeautySkin.
               </p>
             </div>
-            <div className="min-w-0 rounded-[28px] bg-white/10 p-4 backdrop-blur-sm sm:min-w-105">
+            <div className="min-w-0 rounded-[28px] border border-white/15 bg-white/10 p-4 shadow-[0_18px_40px_rgba(80,50,52,0.2)] backdrop-blur-sm sm:min-w-105">
               <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
-                <input className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/55 outline-none" placeholder="Alamat email" />
+                <input className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/55 outline-none transition focus:border-white/40 focus:bg-white/15" placeholder="Alamat email" />
                 <Button type="button" className="bg-[#fff6f1] text-[#8b5a62] hover:bg-white">Gabung</Button>
               </div>
+              <p className="mt-3 px-1 text-xs text-white/60">Tanpa spam. Berhenti berlangganan kapan saja.</p>
             </div>
           </div>
         </div>
