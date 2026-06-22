@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { Outfit, Nunito } from "next/font/google";
 import { PageShell } from "@/components/page-shell";
 import "./globals.css";
-const plusJakartaSans = Plus_Jakarta_Sans({
+
+const nunito = Nunito({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const outfit = Outfit({
   variable: "--font-display-font",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${plusJakartaSans.variable} ${fraunces.variable} h-full antialiased`}>
+    <html lang="id" className={`${nunito.variable} ${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <PageShell>{children}</PageShell>
       </body>

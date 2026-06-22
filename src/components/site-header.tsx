@@ -30,7 +30,7 @@ export function SiteHeader() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "border-[#efe4de] bg-white/80 shadow-[0_10px_30px_rgba(122,86,69,0.08)] backdrop-blur-xl"
+          ? "border-[#e2ede7] bg-white/80 shadow-[0_10px_30px_rgba(122,86,69,0.08)] backdrop-blur-xl"
           : "border-transparent bg-white/60 backdrop-blur-md"
       }`}
     >
@@ -39,7 +39,7 @@ export function SiteHeader() {
           <BrandLogo />
         </Link>
 
-        <nav className="hidden items-center gap-1 rounded-full border border-[#efe4de] bg-white p-1 shadow-[0_8px_24px_rgba(122,86,69,0.06)] lg:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-[#e2ede7] bg-white p-1 shadow-[0_8px_24px_rgba(122,86,69,0.06)] lg:flex">
           {navigation.map((item) => {
             const active = item.href === "/" ? pathname === item.href : pathname.startsWith(item.href);
 
@@ -49,8 +49,8 @@ export function SiteHeader() {
                 href={item.href}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
                   active
-                    ? "bg-linear-to-r from-[#9d6f78] to-[#b9858d] text-white shadow-[0_8px_20px_rgba(157,111,120,0.3)]"
-                    : "text-[#6f5b54] hover:bg-[#f8f1ed] hover:text-[#8b5a62]"
+                    ? "bg-linear-to-r from-[#688d7b] to-[#88b09a] text-white shadow-[0_8px_20px_rgba(157,111,120,0.3)]"
+                    : "text-[#5a6e62] hover:bg-[#f8f1ed] hover:text-[#4c6b5b]"
                 }`}
               >
                 {item.label}
@@ -62,7 +62,7 @@ export function SiteHeader() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/recommendation"
-            className="shine flex items-center gap-2 rounded-full bg-linear-to-br from-[#9d6f78] to-[#bb868e] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(157,111,120,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(157,111,120,0.4)]"
+            className="shine flex items-center gap-2 rounded-full bg-linear-to-br from-[#688d7b] to-[#8fb8a2] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(157,111,120,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(157,111,120,0.4)]"
           >
             <Search className="h-4 w-4" />
             Cari Rekomendasi
@@ -72,14 +72,14 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setIsOpen((value) => !value)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#efe4de] bg-white text-[#8b5a62] shadow-sm lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#e2ede7] bg-white text-[#4c6b5b] shadow-sm lg:hidden"
           aria-label="Toggle navigation"
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
-      <div className={`border-t border-[#efe4de] bg-white/95 px-4 py-4 lg:hidden ${isOpen ? "block" : "hidden"}`}>
+      <div className={`border-t border-[#e2ede7] bg-white/95 px-4 py-4 lg:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="mx-auto flex max-w-7xl flex-col gap-2 sm:px-2">
           {navigation.map((item) => {
             const active = item.href === "/" ? pathname === item.href : pathname.startsWith(item.href);
@@ -91,8 +91,8 @@ export function SiteHeader() {
                 onClick={() => setIsOpen(false)}
                 className={`rounded-2xl px-4 py-3 text-sm font-medium transition ${
                   active
-                    ? "bg-linear-to-r from-[#9d6f78] to-[#b9858d] text-white shadow-sm"
-                    : "text-[#6f5b54] hover:bg-[#f8f1ed]"
+                    ? "bg-linear-to-r from-[#688d7b] to-[#88b09a] text-white shadow-sm"
+                    : "text-[#5a6e62] hover:bg-[#f8f1ed]"
                 }`}
               >
                 {item.label}

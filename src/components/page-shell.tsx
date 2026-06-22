@@ -14,7 +14,7 @@ export function PageShell({ children }: PageShellProps) {
   const pathname = usePathname();
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#fffaf8] text-[#221816]">
+    <div className="flex min-h-screen flex-col bg-[#f8faf9] text-[#1a2b22]">
       <SiteHeader />
       <AnimatePresence mode="wait">
         <motion.main

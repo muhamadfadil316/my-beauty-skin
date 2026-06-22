@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffaf8;
-  --foreground: #221816;
+  --background: #f8faf9;
+  --foreground: #1a2b22;
 
-  /* Warm brand palette */
-  --rose: #9d6f78;
-  --rose-soft: #b9858d;
-  --clay: #b37e6e;
-  --blush: #f6d5cb;
-  --cream: #fff8f4;
-  --espresso: #1f1a17;
-
-  --muted: #6f5b54;
-  --border: #efe4de;
+  /* Fresh Soft Sage Palette */
+  --sage-dark: #5c7769;
+  --sage-main: #85a999;
+  --sage-soft: #a8c4b6;
+  --mint-light: #d8efe3;
+  --mint-pale: #e8f2ec;
+  --peach-warm: #f5c4b3;
+  --peach-soft: #faebd7;
+  --surface-white: #ffffff;
+  
+  --muted-text: #6b7e73;
+  --border-soft: #e2ede7;
 }
 
 @theme inline {
@@ -21,6 +23,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-body);
   --font-display: var(--font-display-font);
+  
+  --color-brand-primary: var(--sage-main);
+  --color-brand-secondary: var(--sage-dark);
+  --color-brand-accent: var(--peach-warm);
+  --color-brand-surface: var(--surface-white);
+  --color-brand-muted: var(--muted-text);
+  --color-brand-border: var(--border-soft);
+  --color-brand-light: var(--mint-pale);
 }
 
 html {
@@ -32,37 +42,37 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   min-height: 100vh;
-  /* Warm, layered glow that matches the rose/clay component palette */
+  /* Fresh, friendly dew background */
   background-image:
-    radial-gradient(circle at 12% -5%, rgba(246, 213, 203, 0.55), transparent 38%),
-    radial-gradient(circle at 92% 0%, rgba(232, 207, 194, 0.42), transparent 34%),
-    radial-gradient(circle at 50% 118%, rgba(214, 183, 171, 0.28), transparent 46%),
-    linear-gradient(180deg, #fffaf8 0%, #fdf4ef 55%, #faf0ea 100%);
+    radial-gradient(circle at 12% -5%, rgba(216, 239, 227, 0.55), transparent 38%),
+    radial-gradient(circle at 92% 0%, rgba(245, 196, 179, 0.32), transparent 34%),
+    radial-gradient(circle at 50% 118%, rgba(168, 196, 182, 0.28), transparent 46%),
+    linear-gradient(180deg, #f8faf9 0%, #f0f5f2 55%, #eaf1ed 100%);
   background-attachment: fixed;
 }
 
 ::selection {
-  background: rgba(157, 111, 120, 0.22);
-  color: #4a2f30;
+  background: rgba(133, 169, 153, 0.22);
+  color: #1a2b22;
 }
 
-/* Refined warm scrollbar */
+/* Fresh scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ddc9c0 transparent;
+  scrollbar-color: #c4d7cd transparent;
 }
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e2cfc6;
+  background: #c4d7cd;
   border-radius: 9999px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d2b8ad;
+  background: #a8c4b6;
   background-clip: content-box;
 }
 
@@ -73,7 +83,7 @@ body {
 
 /* Gradient text accent for headlines */
 .text-gradient {
-  background: linear-gradient(118deg, #8b5a62 0%, #9d6f78 42%, #c79b86 100%);
+  background: linear-gradient(118deg, #5c7769 0%, #85a999 42%, #f5c4b3 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -81,17 +91,17 @@ body {
 
 /* Soft, signature shadow used across cards */
 .shadow-beauty {
-  box-shadow: 0 22px 60px rgba(122, 86, 69, 0.14);
+  box-shadow: 0 22px 60px rgba(92, 119, 105, 0.12);
 }
 .shadow-beauty-lg {
-  box-shadow: 0 32px 80px rgba(122, 86, 69, 0.18);
+  box-shadow: 0 32px 80px rgba(92, 119, 105, 0.16);
 }
 
 /* Subtle grid texture for the hero panel */
 .beauty-grid {
   background-image:
-    linear-gradient(rgba(157, 111, 120, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(157, 111, 120, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(133, 169, 153, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(133, 169, 153, 0.08) 1px, transparent 1px);
   background-size: 26px 26px;
 }
 

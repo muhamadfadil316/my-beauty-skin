@@ -39,7 +39,7 @@ export function ProductListingPage() {
   return (
     <div className="space-y-10 px-4 py-10 sm:px-6 lg:px-8">
       <section className="mx-auto max-w-7xl space-y-6">
-        <div className="rounded-[34px] border border-[#efe4de] bg-white p-6 shadow-[0_24px_70px_rgba(122,86,69,0.08)]">
+        <div className="rounded-[34px] border border-[#e2ede7] bg-white p-6 shadow-[0_24px_70px_rgba(122,86,69,0.08)]">
           <SectionHeading
             eyebrow="Daftar produk"
             title="Jelajahi produk pilihan"
@@ -73,11 +73,11 @@ export function ProductListingPage() {
 
       <section className="mx-auto max-w-7xl space-y-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-3 text-[#6f5b54]">
+          <div className="flex items-center gap-3 text-[#5a6e62]">
             <Grid3X3 className="h-5 w-5" />
             <span className="text-sm font-medium">{products.length} produk ditemukan</span>
           </div>
-          <div className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#b37e6e] shadow-sm">
+          <div className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#819c8d] shadow-sm">
             <Filter className="h-4 w-4" />
             Filter produk
           </div>

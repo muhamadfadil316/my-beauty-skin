@@ -13,7 +13,7 @@ export function SectionHeading({ eyebrow, title, description, action }: SectionH
       <div className="max-w-2xl space-y-3">
         {eyebrow ? (
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.34em] text-[#b57f73]">
-            <span className="h-px w-6 bg-linear-to-r from-[#d6b7ab] to-transparent" />
+            <span className="h-px w-6 bg-linear-to-r from-[#b0cbbd] to-transparent" />
             {eyebrow}
           </p>
         ) : null}

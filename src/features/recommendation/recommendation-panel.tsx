@@ -21,23 +21,23 @@ export function RecommendationPanel() {
       <motion.section
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
-        className="rounded-[34px] border border-[#efe4de] bg-white p-6 shadow-[0_24px_70px_rgba(122,86,69,0.08)]"
+        className="rounded-[34px] border border-[#e2ede7] bg-white p-6 shadow-[0_24px_70px_rgba(122,86,69,0.08)]"
       >
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="space-y-6 rounded-[28px] bg-linear-to-br from-[#f8e7e0] via-white to-[#fdf4ef] p-6">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e] shadow-sm">
+          <div className="space-y-6 rounded-[28px] bg-linear-to-br from-[#e3ede7] via-white to-[#f0f6f3] p-6">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#819c8d] shadow-sm">
               <WandSparkles className="h-4 w-4" />
               Pencarian Rekomendasi
             </div>
             <h1 className="font-display text-4xl text-gradient md:text-5xl">Temukan produk berdasarkan kebutuhan Anda</h1>
-            <p className="max-w-xl text-sm leading-7 text-[#6f5b54]">
+            <p className="max-w-xl text-sm leading-7 text-[#5a6e62]">
               Masukkan kondisi atau kebutuhan yang ingin Anda prioritaskan, lalu lihat produk yang paling relevan untuk rutinitas harian.
             </p>
 
             <label className="block">
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">Kebutuhan</span>
-              <div className="flex gap-3 rounded-[22px] border border-[#eadfd9] bg-white p-2 shadow-sm">
-                <Search className="ml-3 mt-3 h-5 w-5 text-[#b37e6e]" />
+              <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.24em] text-[#819c8d]">Kebutuhan</span>
+              <div className="flex gap-3 rounded-[22px] border border-[#dae8e0] bg-white p-2 shadow-sm">
+                <Search className="ml-3 mt-3 h-5 w-5 text-[#819c8d]" />
                 <input
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
@@ -53,7 +53,7 @@ export function RecommendationPanel() {
                   key={example}
                   type="button"
                   onClick={() => setQuery(example)}
-                  className="rounded-full border border-[#eadfd9] bg-white px-4 py-2 text-sm text-[#6f5b54] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d6b7ab] hover:bg-[#fdf4ef] hover:text-[#8b5a62] hover:shadow-sm"
+                  className="rounded-full border border-[#dae8e0] bg-white px-4 py-2 text-sm text-[#5a6e62] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b0cbbd] hover:bg-[#f0f6f3] hover:text-[#4c6b5b] hover:shadow-sm"
                 >
                   {example}
                 </button>
@@ -68,25 +68,25 @@ export function RecommendationPanel() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-[28px] border border-[#efe4de] bg-[#fff9f7] p-6">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">
+            <div className="rounded-[28px] border border-[#e2ede7] bg-[#f6f9f7] p-6">
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#819c8d]">
                 <Sparkles className="h-4 w-4" />
                 Result
               </div>
               <h2 className="mt-3 font-display text-3xl text-gradient">{result.label}</h2>
-              <p className="mt-3 text-sm leading-7 text-[#6f5b54]">{result.reason}</p>
+              <p className="mt-3 text-sm leading-7 text-[#5a6e62]">{result.reason}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {result.keywords.map((keyword) => (
-                  <span key={keyword} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[#8b5d51] shadow-sm">
+                  <span key={keyword} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[#60796b] shadow-sm">
                     {keyword}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[28px] border border-[#efe4de] bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#b37e6e]">Produk yang cocok</p>
-              <p className="mt-2 text-sm text-[#6f5b54]">Produk yang sesuai akan muncul di sini berdasarkan kata kunci yang Anda pilih.</p>
+            <div className="rounded-[28px] border border-[#e2ede7] bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#819c8d]">Produk yang cocok</p>
+              <p className="mt-2 text-sm text-[#5a6e62]">Produk yang sesuai akan muncul di sini berdasarkan kata kunci yang Anda pilih.</p>
             </div>
           </div>
         </div>

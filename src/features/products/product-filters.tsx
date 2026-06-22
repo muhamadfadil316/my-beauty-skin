@@ -18,7 +18,7 @@ interface ProductFiltersProps {
 }
 
 const selectClassName =
-  "w-full rounded-2xl border border-[#eadfd9] bg-white px-4 py-3 text-sm text-[#8b5a62] shadow-sm outline-none transition focus:border-[#d6b7ab] focus:ring-2 focus:ring-[#f2d6cd]";
+  "w-full rounded-2xl border border-[#dae8e0] bg-white px-4 py-3 text-sm text-[#4c6b5b] shadow-sm outline-none transition focus:border-[#b0cbbd] focus:ring-2 focus:ring-[#c0dfcf]";
 
 export function ProductFiltersPanel({
   query,
@@ -37,10 +37,10 @@ export function ProductFiltersPanel({
   onReset,
 }: ProductFiltersProps) {
   return (
-    <div className="rounded-[30px] border border-[#efe4de] bg-white p-5 shadow-[0_18px_50px_rgba(122,86,69,0.08)]">
+    <div className="rounded-[30px] border border-[#e2ede7] bg-white p-5 shadow-[0_18px_50px_rgba(122,86,69,0.08)]">
       <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-5">
         <label className="flex flex-col gap-2 xl:col-span-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a7796c]">Cari</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#719582]">Cari</span>
           <input
             value={query}
             onChange={(event) => onQueryChange(event.target.value)}
@@ -50,7 +50,7 @@ export function ProductFiltersPanel({
         </label>
 
         <label className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a7796c]">Kategori</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#719582]">Kategori</span>
           <select value={category} onChange={(event) => onCategoryChange(event.target.value)} className={selectClassName}>
             <option value="">Semua kategori</option>
             {categories.map((item) => (
@@ -60,7 +60,7 @@ export function ProductFiltersPanel({
         </label>
 
         <label className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a7796c]">Jenis kulit</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#719582]">Jenis kulit</span>
           <select value={skinType} onChange={(event) => onSkinTypeChange(event.target.value)} className={selectClassName}>
             <option value="">Semua jenis kulit</option>
             {skinTypes.map((item) => (
@@ -70,7 +70,7 @@ export function ProductFiltersPanel({
         </label>
 
         <label className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a7796c]">Kebutuhan</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#719582]">Kebutuhan</span>
           <select value={concern} onChange={(event) => onConcernChange(event.target.value)} className={selectClassName}>
             <option value="">Semua kebutuhan</option>
             {concerns.map((item) => (
@@ -80,7 +80,7 @@ export function ProductFiltersPanel({
         </label>
 
         <label className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a7796c]">Urutkan</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#719582]">Urutkan</span>
           <select value={sortBy} onChange={(event) => onSortChange(event.target.value as ProductSortOption)} className={selectClassName}>
             <option value="featured">Unggulan</option>
             <option value="rating-desc">Rating tertinggi</option>
@@ -91,14 +91,14 @@ export function ProductFiltersPanel({
         </label>
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[#f1e7e2] pt-5 text-sm text-[#6f5b54]">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[#eaf2ee] pt-5 text-sm text-[#5a6e62]">
         <div className="flex flex-wrap gap-2">
-          {query ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Pencarian: {query}</span> : null}
-          {category ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Kategori: {category}</span> : null}
-          {skinType ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Kulit: {skinType}</span> : null}
-          {concern ? <span className="rounded-full bg-[#faf1ed] px-3 py-1">Kebutuhan: {concern}</span> : null}
+          {query ? <span className="rounded-full bg-[#ebf3ef] px-3 py-1">Pencarian: {query}</span> : null}
+          {category ? <span className="rounded-full bg-[#ebf3ef] px-3 py-1">Kategori: {category}</span> : null}
+          {skinType ? <span className="rounded-full bg-[#ebf3ef] px-3 py-1">Kulit: {skinType}</span> : null}
+          {concern ? <span className="rounded-full bg-[#ebf3ef] px-3 py-1">Kebutuhan: {concern}</span> : null}
         </div>
-        <button type="button" onClick={onReset} className="font-semibold text-[#8d5d52] transition hover:text-[#8b5a62]">
+        <button type="button" onClick={onReset} className="font-semibold text-[#60796b] transition hover:text-[#4c6b5b]">
           Atur ulang
         </button>
       </div>

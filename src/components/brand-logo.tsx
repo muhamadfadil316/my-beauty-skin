@@ -15,7 +15,7 @@ export function BrandLogo({ className, showTagline = true, size = "md" }: BrandL
     <div className={cn("group flex items-center gap-3", className)}>
       <div
         className={cn(
-          "shine relative flex items-center justify-center rounded-2xl bg-linear-to-br from-[#9d6f78] via-[#a8757d] to-[#c79b86] text-white shadow-[0_14px_30px_rgba(157,111,120,0.32)] ring-1 ring-white/40 transition-transform duration-300 group-hover:-translate-y-0.5",
+          "shine relative flex items-center justify-center rounded-2xl bg-linear-to-br from-[#688d7b] via-[#a8757d] to-[#c79b86] text-white shadow-[0_14px_30px_rgba(157,111,120,0.32)] ring-1 ring-white/40 transition-transform duration-300 group-hover:-translate-y-0.5",
           markSize,
         )}
       >
@@ -23,7 +23,7 @@ export function BrandLogo({ className, showTagline = true, size = "md" }: BrandL
       </div>
 
       <div>
-        <p className={cn("font-display font-semibold text-[#221816]", titleSize)}>MyBeautySkin</p>
+        <p className={cn("font-display font-semibold text-[#1a2b22]", titleSize)}>MyBeautySkin</p>
         {showTagline ? (
           <p className={cn("hidden uppercase tracking-[0.24em] text-[#b88a7b] sm:block", taglineSize)}>
             beauty essentials

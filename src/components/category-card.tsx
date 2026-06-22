@@ -27,16 +27,16 @@ export function CategoryCard({ title, description, accent }: CategoryCardProps) 
       <div className="absolute -bottom-10 -left-6 h-24 w-24 rounded-full bg-white/30 blur-2xl" />
       <div className="relative flex h-full min-h-55 flex-col justify-between">
         <div className="space-y-4">
-          <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/70 text-[#9d6f78] shadow-[0_10px_24px_rgba(157,111,120,0.18)] ring-1 ring-white/60 backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-6">
+          <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/70 text-[#688d7b] shadow-[0_10px_24px_rgba(157,111,120,0.18)] ring-1 ring-white/60 backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-6">
             <Icon className="h-6 w-6" />
           </span>
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#b47b6c]">Category</p>
-            <h3 className="font-display text-2xl text-[#221816]">{title}</h3>
+            <h3 className="font-display text-2xl text-[#1a2b22]">{title}</h3>
             <p className="max-w-xs text-sm leading-7 text-[#6c5b55]">{description}</p>
           </div>
         </div>
-        <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#221816] transition-all duration-300 group-hover:gap-3">
+        <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#1a2b22] transition-all duration-300 group-hover:gap-3">
           Explore collection
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/70 shadow-sm transition-transform duration-300 group-hover:translate-x-1">
             <ArrowRight className="h-4 w-4" />
