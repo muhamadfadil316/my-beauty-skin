@@ -41,7 +41,7 @@ export function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#b2d4c3]">Kenapa terasa nyaman</p>
           <h2 className="mt-4 font-display text-4xl">Pencarian produk yang cepat.</h2>
           <p className="mt-4 text-sm leading-7 text-white/75">
-            Alur sederhana agar fokus pada produk dan kebutuhan yang diprioritaskan.
+            Alur sederhana, fokus pada produk dan kebutuhan yang diprioritaskan.
           </p>
         </div>
 
